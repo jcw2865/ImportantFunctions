@@ -40,3 +40,10 @@ function adjacentElementsProduct(inputArray) {
   return cb;
 }
 
+// =========================
+// SHAPE AREA
+// =========================
+// Determine the area of an interesting polygon for given 'n'. A 1-interesting polygon is just a square with a side of length 1. An n-interesting polygon is obtained by taking the n - 1-interesting polygon and appending 1-interesting polygons to its rim, side by side. Visuals can be found here https://medium.com/@josephcardillo/javascript-functions-for-dummies-me-part-3-b3e8b3cf8288 . 
+function shapeArea(n) {
+  return n*n + (n-1)*(n-1);
+}
